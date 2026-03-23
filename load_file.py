@@ -93,11 +93,9 @@ def load_and_split_docs_from_folder(folder_path, chunk_size=500, chunk_overlap=5
         chunk_overlap=chunk_overlap,
         length_function=len,
         separators=[
+            "#",
             "\n\n",
             "\n",
-            "。", "！", "？",
-            "；", "，", "、",
-            " ",
             ""
         ]
     )

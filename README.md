@@ -4,20 +4,6 @@
 ## 🚀 快速开始 (Quick Start)
 为了确保你能顺利在自己的电脑上跑通本项目，请严格按照以下步骤操作：
 
-<<<<<<< HEAD
-### 1.需要安装的python库
-- streamlit
-- langchain
-- faiss-cpu
-- numpy
-- pypdf
-- unstructured
-- python-docx
-- zai
-- spacy
-
-### 2.配置API-key
-=======
 ### 1.准备 Python 环境
 建议使用 **Python 3.11 或 3.12**。当前项目依赖链在 Python 3.14 下存在兼容性问题，不建议直接使用。
 
@@ -49,44 +35,27 @@ python -m pip install -r requirements.txt
 - 当前项目没有使用 spaCy，已不再将其作为必装依赖。
 
 ### 3.配置API-key
->>>>>>> 52c8eb6 (init)
 1. 到[质谱清言官网](https://bigmodel.cn/console/overview)上申请一个API-key
 2. 在当前目录新建一个key.txt文件，将自己的API-key写入。
 
 **注意：请不要将自己的API-key推送到仓库中**
 
-<<<<<<< HEAD
-### 3.准备知识库
-=======
 ### 4.准备知识库
->>>>>>> 52c8eb6 (init)
 为了避免 Git 仓库臃肿，所有的课件和 PDF 资料不进行代码托管
 
 新建一个名为knowledge的目录，在里面存放对应课程的资料
 
-<<<<<<< HEAD
-### 4.生成向量库
-=======
 ### 5.生成向量库
->>>>>>> 52c8eb6 (init)
 目前支持操作系统和计算机组成原理两门课程，二者的向量库要分开生成。
 
 运行embedding.py即可读取knowledge中的文件并生成向量库，注意知识库内容与生成的文件名要匹配，操作系统的向量库叫做vector_db_os.json,计算机组成的向量库叫做vector_db_co.json。
 
-<<<<<<< HEAD
-### 5.启动web界面
-=======
 ### 6.启动web界面
->>>>>>> 52c8eb6 (init)
 在终端输入`streamlit run UI.py`即可运行程序
 
 ## 代码结构指南
 ### 1.load_file.py
-<<<<<<< HEAD
-用于读取knowledge目录中的文件，然后将文本切分成若干个文本块，目前支持读取doxc、txt、pdf三种类型的文件。
-=======
 用于读取knowledge目录中的文件，然后将文本切分成若干个文本块，目前支持读取 docx、txt、pdf、md 四种类型的文件。
->>>>>>> 52c8eb6 (init)
 
 ### 2.embedding.py
 通过调用embedding-3模型，将文本块转化为向量，最终存储在向量库中。
@@ -101,8 +70,4 @@ python -m pip install -r requirements.txt
 用streamlit搭建的前端界面设计
 
 ## 后续开发计划
-<<<<<<< HEAD
 to be continue...
-=======
-to be continue...
->>>>>>> 52c8eb6 (init)
